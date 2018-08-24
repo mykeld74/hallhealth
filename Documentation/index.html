@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Milk Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Milk&rdquo; Documentation by &ldquo;Pryanik&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center"><img src="assets/images/logo.png"></h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 05/31/2014<br>
+					By: Pryanik<br>
+					Email: <a href="mailto:youremail@yourdomain.com">dmitrypryanik@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/Pryanikov">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#install">Installing the Template</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<h3 id="install"><strong>A. Installing the Template</strong> - <a class="top small" href="#toc">top</a></h2>
+		  <p>You can view this template in any web browser from your desktop computer.  Because the files are written in HTML, you do not need an internet connection in order to display or edit the template. </p>
+		  <h3>Getting the Template Online</h3>
+		  <ol>
+		    <li>It's important to understand that you must either have your own server space or use someone elses.  The server space can be purchased at many different places around the internet.  You need somewhere to put the files that you purchased so others can find them online.</li>
+		    <li>It's very important to keep the css and js-plugin folders with the HTML or the HTML will not look how the design is meant to look.  Along with the HTML files, you will also have four additional folders to upload: js, img, and css. </li>
+		    <li>Start your FTP client (I personally use <a href="http://filezilla-project.org/">Filezila</a> which is free) and login.  Login to your server.  You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company. </li>
+		    <li>Locate the domain folder you wish to upload your template files to on your server.  You are going to want to click and drag every file into your FTP client.</li>
+		  </ol>
+
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>B. HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive layout. All of the information within the main content area is nested within a div with a class  of "main". Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.jpg" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of this sections, you would do the following:</p>
+
+<pre>	#primaryContent a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	#wrap #primaryContent a {
+		color: #someColor;
+	}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>C. CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using two CSS files in this theme. The first one is a bootstrap file.This file contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	
+
+	/**********************
+	********=Header********
+	**********************/
+
+	some code
+
+	/**********************
+	******=Home Slider*****
+	**********************/
+	
+	some code
+	
+	/**********************
+	*********=blog*********
+	**********************/
+	
+	some code
+	
+	/**********************
+	*********=aside********
+	**********************/
+	
+	some code
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Blockquotes has border radius and box shadow. If you would like to edit the display of these items, find the following section in the style sheet:</p>
+
+		<pre>
+		
+		blockquote{
+			position: relative;
+			box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+			font-family: "Montserrat";
+			font-size: 14px;
+			font-weight: 700;
+			color:#fff;
+			text-transform: uppercase;
+			padding: 25px 30px;
+			border:none;
+
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+		</pre>
+
+		<p>Any post images has border radius. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>	
+	.post a>img,
+	.post>img,
+	.post .slider,
+	.contact-page .map iframe{
+		width: 100%;
+		-webkit-border-radius: 3px 3px 0 0;
+		-moz-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
+		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+	}
+
+</pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>D. JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This template uses several javascript files, all of them are placed a folder called "js" and on googleapis servers. All javascript files are called in the head of the page. The main.js file, which is located in the js folder, is where we have placed all plugin calls and custom functions.</p>
+		  
+		<img src="assets/images/js.png" alt="HTML Structure" /> 
+		<p>Here is a complete list of all plugins we've used to create The Modarama Theme. All plugins are called in the main.js file in the js folder.
+
+		<h4>Bootstrap</h4>
+		<p>This plugin contains tabs, toogles, modal windows and other bootstrap components. The documentation can be found <a href="http://getbootstrap.com/getting-started/">here</a>.
+
+		<h4>Smoothscroll</h4>
+		<p>This plugin is used to add smooth mouse wheel effect to whole page. The documentation can be found <a href="https://github.com/galambalazs/smoothscroll">here</a>.
+
+		<h4>Bxslider</h4>
+		<p>This plugin is used to create post sliders and home slider. The documentation can be found <a href="http://bxslider.com/options">here</a>.
+
+		<h4>DoubleTapToGo</h4>
+		<p>This plugin is used to make dropdown menu works on mobile devices. The documentation can be found <a href="http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly">here</a>.
+
+		<h4>Fluidvids</h4>
+		<p>This plugin is used to make youtube and vimeo videos responsive. The documentation can be found <a href="https://github.com/toddmotto/fluidvids">here</a>.
+
+		<h4>Flickrush</h4>
+		<p>This plugin is used to display flickr photo streams. The documentation can be found <a href="https://github.com/philipbeel/Flickrush">here</a>.
+
+		<h4>Countdown</h4>
+		<p>This plugin is used to create coming soon countdown. The documentation can be found <a href="http://keith-wood.name/countdown.html">here</a>.
+
+		<h4>Retina</h4>
+		<p>This plugin is used to replace all images with their retina copies when page is viewed on retina display. The documentation can be found <a href="http://retinajs.com/">here</a>. 
+		
+        <p>When you load a page, retina.js checks each image on the page to see if there is a high-resolution version of that image on your server. If a high-resolution variant exists, the script will swap in that image in-place.</p>
+
+        <p>The script assumes you use <a href="http://developer.apple.com/library/ios/#documentation/2DDrawing/Conceptual/DrawingPrintingiOS/SupportingHiResScreensInViews/SupportingHiResScreensInViews.html#//apple_ref/doc/uid/TP40010156-CH15-SW1">Apple's prescribed high-resolution modifier (@2x)</a> to denote high-resolution image variants on your server.</p>
+
+        <p>For example, if you have an image on your page that looks like this:<br>
+        <code>&lt;img src="/images/my_image.png" /&gt;</code>
+        </p>
+
+        <p>The script will check your server to see if an alternative image exists at this path:<br>
+        <code>"/images/my_image@2x.png"</code>
+        </p>
+      
+		<h4>cbpGridGallery, classie, imagesloaded.pkgd.min, masonry.pkgd.min, modernizr.custom</h4>
+		<p>This plugins are used to create masonry grid on index and blog pages. The documentation can be found <a href="http://tympanus.net/codrops/2014/03/21/google-grid-gallery/">here</a>.
+
+		<h4>jquery.form, validate-contact-form, jquery.validate</h4>
+		<p>This plugins are used to create and validate contact form. The documentation can be found <a href="">here</a>.
+
+		<h4>snap.svg-min</h4>
+		<p>This plugin is used to create hover animation on home page gallery items. The documentation can be found <a href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/">here</a>. 
+
+		<h4>Main.js</h4>
+		<p>Here we have placed all plugin calls and custom functions. </p>
+
+		<hr>
+		
+		<h3 id="credits"><strong>E. Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		Demo images (NOT included in the package) <a href="http://unsplash.com/">http://unsplash.com/</a>
+		
+		<br>
+		<br>
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Pryanik</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
