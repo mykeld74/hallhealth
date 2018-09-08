@@ -39,7 +39,7 @@ $(function() {
             $(form).ajaxSubmit({
                 type:"POST",
                 data: $(form).serialize(),
-                url:"contact_form.php",
+                url:"/contact_form.php",
                 success: function() {
                     $('#contact .alert-success').fadeIn();
                      $('#contact button[type="submit"]').prop('disabled', true);
