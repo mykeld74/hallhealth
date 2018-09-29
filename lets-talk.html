@@ -9,24 +9,28 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
 </head>
 
 <body>
     <!--HEADER-->
     <header>
         <div class="container">
-            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
             <!--MENU-->
             <a href="" id="responsive-menu-button"><i class="fa fa-bars"></i></a>
             <nav class="menu">
                 <ul class="list-inline">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="about.html">about</a>
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a></li>
+                        <a href="lets-talk.html">Let's Talk</a>
+                    </li>
                     <li>
+                        <a href="get-the-essentials.html">Get the Essentials</a>
+                    </li>
                 </ul>
             </nav>
             <!--END MENU-->
@@ -42,33 +46,39 @@
                     <div class="post">
                         <div class="content">
                             <h3>Let's Talk!</h3>
+                            <p>Tired of one-size-fits-all approaches to dieting? Drained from toxic relationships? Want to feel great in your body? Most approaches to healthy eating dwell on calories, carbohydrates, fats, and proteins. Instead of creating lists of restrictions of good and bad foods, I coach my clients to explore basic improvements and implement gradual changes during our work together. Let's get in touch and start creating a better you today!</p>
                             <p>Our initial coaching session is complimentary so that we can determine if we’re a good fit for each other and you can get a feel for my method of coaching</p>
                             <p>I offer a six or twelve month program with one-on-one sessions meeting in person or online. During which we can meet bi-monthly or monthly, whichever works best for you. Additionally, I am available to teach classes for your business or organization on various nutritional health related topics.</p>
-                            <p>If chatting with me about your journey towards optimal health interests you, simply fill out the attached Health History form and I’ll contact you soon!</p>
+                            <p>If chatting with me about your journey towards optimal health interests you, simply fill out the form below and I’ll contact you soon!</p>
                             <p>You are also welcome to e-mail me directly to start our conversation</p>
-                            <p>My e-mail address is: <a href="mailto:hallhealthcoach@gmail.com">hallhealthcoach@gmail.com</a></p>
+                            <p>My e-mail address is: <a href="mailto:hallhealthcoach@gmail.com">hallhealthcoach@gmail.com</a> or find me on <a href="https://www.facebook.com/tracey.hallhealthcoach/" target="_blank">Facebook!</a></p>
                         </div>
                     </div>
                     <!--END POST-->
                     <!--COMMENTS-->
-                    <div class="comments">
-                        <h3>Questions and comments</h3>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-7 col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Name*">
+                    <div class="form-container">
+                        <h2>Contact Us</h2>
+                        <hr>
+                        <div class="row">
+                            <form action="https://submit.jotform.us/submit/82617526662159/" method="post" name="form_82617526662159" id="82617526662159" accept-charset="utf-8">
+                                <div class="col-xs-12 col-md-8">
+                                    <input type="text" id="input_7" name="q7_name" data-type="input-textbox" class="form-textbox" value="" data-component="textbox" placeholder="Name*" required /> </div>
+                                <div class="col-xs-12 col-md-8">
+                                    <input type="email" name="q4_email" class="form-textbox" placeholder="Email*" required>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-7 col-sm-12">
-                                    <input type="email" class="form-control" placeholder="Email*">
+                                <div class="col-xs-12 col-md-8">
+                                    <input type="tel" id="input_5_phone" name="q5_phoneNumber[phone]" class="form-textbox" value="" data-component="phone" placeholder="Phone*" required />
                                 </div>
-                            </div>
-                            <textarea class="form-control" placeholder="Comment*" rows="10"></textarea>
-                            <button type="button" class="btn btn-default">Submit</button>
-                        </form>
+                                <div class="col-xs-12 col-md-8">
+                                    <textarea id="input_6" class="form-textarea" name="q6_message" cols="40" rows="6" data-component="textarea" placeholder="Message*"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-md-8">
+                                    <button class="btn btn-submit" type="submit" name='submit' id="submit" value="submit">Submit</button>
+                                </div>
+                            </form>
+                            <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/80986232562159"></script> -->
+                        </div>
                     </div>
-                    <!--END COMMENTS-->
                     <!--RELATED POSTS GRID-->
                     <div class="related" id="masonry">
                         <div class="row">
@@ -98,14 +108,7 @@
     <!--FOOTER-->
     <footer>
         <div class="container">
-            <img src="img/logo-sm.png" alt="">
-            <ul class="list-inline social">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-            </ul>
-            <p>© 2017 All rights reserved.</p>
+            <p>© 2018 All rights reserved.</p>
         </div>
     </footer>
     <!--END FOOTER-->

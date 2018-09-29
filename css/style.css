@@ -60,6 +60,10 @@ h3{
 	margin: 20% auto;
 }
 
+.img-responsive{
+	margin: auto;
+}
+
 /**********************
 ******2. Colors*****
 **********************/
@@ -1184,6 +1188,32 @@ aside img{
 	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
 }
 
+.form-textbox{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.form-textarea{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form-container{
+	padding: 20px;
+	background-color: #fff;
+}
+.btn-submit{
+	width: 100%;
+	background-color: #94acb2;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 20px;
+	transition: all .3s ease-in-out;
+}
+.btn-submit:hover{
+	background-color: #7b8c92;
+	color: #fff;
+}
 /**********************
 ******11. Work****
 **********************/
