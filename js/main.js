@@ -23,7 +23,7 @@ $(document).ready(function(){
 	/////////// Loader //////////////
 
 	$(window).load(function(){
-	  $('#loader').delay(1000).fadeOut(500);
+	  $('#loader').delay(100).fadeOut(400);
 	});
 
 	///////////Mobile Menu Button Toggle//////////////
